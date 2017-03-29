@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Füdstr</title>
+	<link type="image/png" href="images/favicon.png" rel="icon">
+	<link rel="stylesheet" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Overpass:800|Josefin+Sans" rel="stylesheet">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+</head>
+<body>
+<!-- <div class="bgColor"> -->
+	<aside>
+		<p>Created by <a href="https://twitter.com/nickevansmedia">Nick Evans</a> and <a href="http://itsrennie.com/">Rennie Cee</a>.</p>
+	</aside>
+
+	<header>
+	<div class="wrapper">
+		<div class="allowance">
+			<h2 class="allowancePrice" data-allowance="0"></h2>
+			<h4>allowance</h4>
+		</div>
+		<div class="trash">
+			
+		</div>
+		<div class="cart">
+			<h4>Drag and drop items here</h4>
+		</div>
+		<div class="health">
+			<h2 class="healthy" data-healthnumber="50">50</h2>
+			<h4>your health score</h4>
+		</div>
+	</div>
+	</header>
+
+	<main>
+		<section>
+		<div class="wrapper">
+			<h2 class="sectionTitle"></h2>
+			
+
+				<div class="current">
+					<div class="welcomeMessage">
+						<h1>Welcome!</h1>
+						<h3>Want to find your healthbuddy?</h3>
+						<img src="images/characters-welcome.png" alt="3 stooges characters" class="charactersWelcome">
+					<!-- 	<h3>1. First enter you name and type of lifestyle</h3>
+						<h3>2. We will then let you know a little bit more about you diet</h3> -->
+	
+						<form class="welcomeForm">
+							<h2>Name</h2>
+							<fieldset class="nameSet">
+								<input type="text" name="name" id="user_name">
+							</fieldset>
+							<h2>Select Lifestyle</h2>
+							<fieldset class="budget" data-type="horizontal">
+									<label for="student">Student</label>
+									<input type="radio" name="budget" id="student" value="student">
+									<label for="adult">Grown Adult</label>
+									<input type="radio" name="budget" id="adult" value="adult">
+									<label for="baller">Baller</label>
+									<input type="radio" name="budget" id="baller" value="baller">
+								
+							</fieldset>
+							<div class="text-center">
+								<input type="submit" id="firstSubmit" value="submit">
+							</div>
+						</form>
+					</div>
+				</div>
+
+				<ul class="foodListBreakfast first">
+				</ul>
+
+				<ul class="foodListLunch">
+					
+				</ul>
+
+				<ul class="foodListDinner third">
+					
+				</ul>
+
+				<ul class="selectedItemsList">
+					<div class="healthImage"></div>
+					<p class="message"></p>
+				</ul>
+
+				<!-- <p class="calcSpending">Total amount spent: $<span class="totalSpent"></span></p> -->
+
+				
+			
+			<!-- Add our website here! -->
+		
+			
+			<div class="text-center">
+				<input href="hackeryou.com" class="tweet" target="_blank" value="tweet us">
+				<button id="previous">Previous</button>
+				<button id="next">Next</button>
+				<form class="subby">
+					<input type="submit" id="submit"  value="Show Results">
+				</form>
+				<input class="startOver" type="button" value="Start Again!" onclick="window.location.reload()">
+			</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Created by <a href="https://twitter.com/nickevansmedia">Nick Evans</a> and <a href="http://itsrennie.com/">Rennie Cee</a>.</p>
+	</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<!-- <script src="jquery.ui.touch-punch.min.js"></script> -->
+<script src="script.js"></script>
+</body>
+</html>

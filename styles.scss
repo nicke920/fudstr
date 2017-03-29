@@ -1,0 +1,419 @@
+@import "partials/normalize";
+
+* {
+	box-sizing: border-box;
+}
+
+.wrapper {
+	max-width: 1400px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+body {
+	background-color: #5A72D9;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	padding: 50px 0;
+}
+
+aside {
+	position: fixed;
+	transform: rotate(-90deg);
+	top: 47%;
+	left: -143px;
+	p {
+		text-transform: uppercase;
+		font-family: "Overpass", sans-serif;
+		font-size: 12px;
+		margin: 0;
+		letter-spacing: 2px;
+		a {
+			text-decoration: none;
+			color: #F99E71;
+		}
+	}
+}
+
+
+.welcomeMessage {
+	margin: 0 auto;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.50);
+	max-width: 500px;
+	width: 90%;
+	padding: 40px 30px 60px 30px;
+	border-radius: 3px;
+	background: #ffffff;
+	h1, h3 {
+		text-align: center;
+	}
+}
+
+.welcomeMessage h3 {
+	font-size: 12px;
+}
+
+fieldset.nameSet, fieldset.budget {
+	border: none;
+	padding: 0;
+	padding-bottom: 20px;
+}
+
+fieldset.budget {
+	display: inline;
+	width: auto;
+	input {
+		margin-right: 40px;
+	}
+}
+// 	div {
+// 		margin: 5px auto;
+// 		padding: 15px 5px;
+
+// 		width: 30%;
+// 		display: flex;
+// 		justify-content: space-between;
+// 	}
+// }
+
+.welcomeForm h2 {
+	font-size: 21px;
+}
+
+#user_name {
+	width: 100%;
+	padding: 5px 10px;
+}
+
+// .budget label {
+// 	padding-right: 6px;
+// 	padding-left: 84px;
+// }
+
+// .budget label:first-of-type {
+// 	padding-left: 0px;
+// }
+
+.text-center {
+	text-align:center;
+}
+
+#firstSubmit {
+	border: none;
+	background: #F99E71;
+	padding: 9px 24px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #ffffff;
+	// font-weight: 100;
+	border-radius: 3px;
+}
+
+img {
+	width: 100%;
+	border: 8px solid #000000;
+	background: rgba(255,255,255,0.5);
+	&:hover {
+		// border: 8px solid #d8d8d8;
+	}
+}
+
+img.charactersWelcome {
+	border: none;
+}
+
+body {
+	font-family: "Josefin Sans", sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	// background: #c9d8c5;
+}
+
+h1, h2, h3, h4, #firstSubmit, #previous, #next, #submit, .startOver, .tweet {
+	font-family: "Overpass", sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+h4 {
+	font-size: 13px;
+}
+
+
+
+
+header {
+	background: white;
+	box-shadow: 0 0 20px 0 rgba(0,0,0,0.20);
+	padding: 10px 0;
+	// clear: both;
+	top: 0;
+	.wrapper {
+		display: flex;
+		justify-content: space-between;
+	}
+	div {
+		// border: 1px solid teal;
+		// background: teal;
+		flex: 1;
+		// display: inline-block;
+	}
+	.cart {
+		flex: 3;
+		display: block;
+		min-height: 100px;
+
+	}
+	.health {
+		text-align: right;
+	}
+	.allowance, .health {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	h4 {
+		margin: 5px 0;
+	}
+	h2 {
+		// margin-bottom: 10px;
+		margin: 5px 0;
+	}
+}
+
+
+.imgCaption {
+	display: flex;
+	justify-content: space-between;
+	// background: pink;
+	.captionName {
+		width: 75%;
+	}
+
+}
+
+#overlay {
+  background:rgba(0,0,0,0.7);
+  width:100%;
+  height:100%;
+  position:absolute;
+  top:0;
+  left:0;
+  text-align:center;
+  
+  display: none;
+}
+
+#overlay img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 500px;
+	height: 500px;
+}
+
+#overlay p {
+	color: white;
+	font-size: 30px;
+	text-transform: capitalize;
+}
+
+ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.tweet, .startOver, .calcSpending, .message, .healthImage, #previous, #next, #submit, .foodListBreakfast, .foodListLunch, .foodListDinner {
+	display: none;
+}
+header {
+	visibility: hidden;
+}
+ul {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+ul.selectedItemsList {
+	display: flex;
+	// flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	max-width: 600px;
+	margin: 0 auto;
+	background: white;
+	margin-bottom: 15px;
+	// padding: 10px;
+	img {
+		border: none;
+	}
+	.message {
+		width: 100%;
+	}
+}
+
+.groceryItem {
+	// background-color: salmon;
+	margin: 30px 0;
+	// display: inline-block;
+	width: calc(25% - 30px);
+	// transition: all 0.5s ease;
+	border-radius: 5px;
+	position: relative;
+	&:hover {
+		box-shadow: 0 20px 5px -10px rgba(0,0,0,0.05);
+		transform: scale(1.02);
+		cursor: pointer;
+	}
+	img:hover {
+		border-radius: 50%;
+		overflow: hidden;
+		transition: all 60s ease;
+	}
+	span {
+		font-size: 14px;
+		margin-right: 2px;
+		// font-family: 'Overpass', sans-serif;
+	}
+}
+
+.cart .groceryItem {
+	box-shadow: none;
+	display: inline-block;
+	margin: 0;
+	img {
+	border: 0px;
+	}
+}
+
+
+.trash {
+	background-image: url("images/garbage.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	opacity: 0.4;
+}
+
+.healthImage {
+	text-align: center;
+	img {
+		width: 200px;
+		height: 200px;
+	}
+}
+
+#previous, #next, #submit, .startOver, .tweet {
+	border: none;
+	background: #F99E71;
+	padding: 9px 24px;
+	margin: 5px;
+	font-size: 12px;
+	color: #ffffff;
+	border-radius: 3px;
+	width: 117px;
+	&:disabled {
+		opacity: 0.2;
+	}
+}
+
+.tweet {
+	background: white;
+	color: rgb(0,132,180);
+}
+
+#submit, .startOver, .tweet {
+	width: calc(234px + 15px);
+	text-align: center;
+	cursor: pointer;
+}
+
+footer {
+	display: none;
+}
+
+.ui-draggable-dragging {
+	transform-origin: center;
+}
+
+
+.ui-draggable-dragging div.imgCaption {
+	display: none;
+}
+
+@media (max-width: 667px) {
+	// ul {
+	// 	justify-content: space-around;
+	// }
+	.groceryItem {
+		margin: 15px 0;
+		width: calc(50% - 30px);
+		img {
+			width: 100%;	
+		}
+	}
+
+	.selectedItemsList .groceryItem {
+		text-align: center;
+		img {
+			width: 100px;
+			height: 100px;
+		}
+	} 
+		
+
+
+	aside {
+		display: none;
+	}
+	footer {
+		display: block;
+		padding: 0 0 20px 0;
+		p {
+		text-transform: uppercase;
+		font-family: "Overpass", sans-serif;
+		font-size: 12px;
+		margin: 0;
+		letter-spacing: 2px;
+		text-align: center;
+		a {
+			text-decoration: none;
+			color: #F99E71;
+		}
+	}
+}
+
+}
+
+@media (max-width: 580px) {
+	fieldset.budget {
+		label {
+			font-size: 16px;
+		}
+		input{
+			margin-right: 5px;
+		}
+	}
+}
+
+@media (max-width: 450px) {
+	header h4 {
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	ul {
+		justify-content: space-around;
+	}
+
+	.sectionTitle {
+		line-height: 28px;
+	}
+}
+
